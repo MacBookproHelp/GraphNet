@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome</title>
+        <%@include file="userheader.jsp" %>
     </head>
     <body>
         <h1>Welcome to GraphNet Application</h1>
@@ -17,11 +18,14 @@
         <jsp:useBean id="loginBean" scope="session" class="org.uac.login" />
         <jsp:setProperty name="loginBean" property="username" />
         <jsp:setProperty name="loginBean" property="password" />
+        
         <%
           int a = loginBean.verify();
           if(a==1){
+              session.setAttribute("user",loginBean.getUsername());
+              String userProf=(String)session.getAttribute("user");
          %>
-            <h1>Hello, <jsp:getProperty name="loginBean" property="username" /></h1>
+            <h1>Hello, Welcome <%=userProf%></h1>
             <% }
             else{ %>
             <h2>Wrong Username or Password, Please try again </h2>

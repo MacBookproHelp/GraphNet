@@ -1,30 +1,35 @@
+<%-- 
+    Document   : header.jsp
+    Created on : Apr 8, 2017, 2:48:17 PM
+    Author     : Teja
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>Project Antwerp</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> GraphNet Application</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-        <link href="resources/css/bootstrapà-theme.min.css" rel="stylesheet">        
-        
+        <link href="resources/css/bootstrapà-theme.min.css" rel="stylesheet">
+        <link href="resources/css/signin.css" rel="stylesheet">
 	<nav	class="navbar navbar-default"	role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
 					<img class="img" src="resources/images/ua.png" alt="lion" style="width:105px;height:32px">
 				</a>
-				<a	class="navbar-brand" href="index.html">GraphNet Application</a>		
+				<a	class="navbar-brand" href="index.html">GraphNet Application</a>
+				<button	type="button"	class="navbar-toggle collapsed"	data-toggle="collapse"	data-target="#autonavbar" aria-expanded="false"	aria-controls="navbar">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				
 			</div>
 			<div id="autonavbar" class="navbar-collapse	collapse">
 				<ul class="nav navbar-nav">
-					<li	class=""><a href="index.html"> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Dashboard </a></li>
+					<li	class="active"><a href="index.html"> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Dashboard </a></li>
 					<li	class=""><a href="#"> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Graphs</a></li>	
 					<li	class=""><a href="#"> <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Preparation</a></li>
 					<li	class=""><a href="#"> <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Execution</a></li>				
@@ -37,35 +42,18 @@ and open the template in the editor.
                                           <li role="separator" class="divider"></li>
                                           <li><a href="fblogin.jsp">Facebook Login</a></li>   
                                           <li role="separator" class="divider"></li>
-                                          <li><a href="register.jsp">Register</a></li>                                         
+                                          <li><a href="register.jsp">Register</a></li>
+                                         
                                         </ul>
                                       </li>                                   
                                 </ul>
 			</div>
 		</div>
-	</nav> 
+	</nav>      
     </head>
-    <body>     
-        <div class="jumbotron">
-
-            <!-- Main component for a primary marketing message or call to action -->
-
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <h1>Welcome to GraphNet Application</h1>
-                        <p>A simple application for creating the graphs</p>
-                    </div>
-                    <div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
-        
+    <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>        
     </body>
 </html>
