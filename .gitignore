@@ -7,5 +7,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-ProjectAntwerp
 # End of https://www.gitignore.io/api/netbeans
