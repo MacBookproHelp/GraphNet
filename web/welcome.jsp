@@ -12,8 +12,14 @@
         <%
           int a = loginBean.verify();
           if(a==1){
+              
               session.setAttribute("user",loginBean.getUsername());
               String userProf=(String)session.getAttribute("user");
+              //System.out.println(userProf);
+                if(userProf.equalsIgnoreCase("admin")){
+                   // System.out.println("incondition");
+                  response.sendRedirect("admin.jsp");
+                 }
          %>
 <!DOCTYPE html>
 <html>
@@ -24,10 +30,10 @@
     </head>
     <body>
         <h1>Welcome to GraphNet Application</h1>               
-        
+           
             <h2>Hello, Welcome <%=userProf%></h2>
             <% }
-            else{ %>
+        else{ %>
             <h2>Wrong Username or Password, Please try again </h2>
             <%}            
         %>                        
