@@ -1,18 +1,18 @@
 <%-- 
-    Document   : welcome
-    Created on : Apr 2, 2017, 10:00:55 PM
+    Document   : facebookwelcome
+    Created on : Apr 16, 2017, 2:00:00 PM
     Author     : Keerthana
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="loginBean" scope="session" class="org.uac.login" />
-    <jsp:setProperty name="loginBean" property="username" />
-    <jsp:setProperty name="loginBean" property="password" />
+<jsp:useBean id="floginBean" scope="session" class="org.uac.login" />
+    <jsp:setProperty name="floginBean" property="username" />
+    <jsp:setProperty name="floginBean" property="useremail" />
     
         <%
-          int a = loginBean.verify();
+          int a = floginBean.faceverify();
           if(a==1){
-              session.setAttribute("user",loginBean.getUsername());
+              session.setAttribute("user",floginBean.getUsername());
               String userProf=(String)session.getAttribute("user");
          %>
 <!DOCTYPE html>

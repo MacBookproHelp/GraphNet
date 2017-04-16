@@ -8,9 +8,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title>Login to Grpah Net</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <title>Login to GraphNet</title>
         <%@include file="header.jsp" %>
     </head>
     <body>
@@ -28,6 +27,7 @@
             <h2 class="form-signin-heading">Please Login Here</h2>
             <label class="sr-only" for="inputEmail">Username</label>
             <input type="text" name="username" class="form-control" placeholder="Enter Username" />
+            <br>
             <label class="sr-only" for="inputPassword">Password</label>
             <input type="password" name="password" class="form-control" placeholder="Enter Password" />
             <button type="submit" class="btn btn-primary"/>Login</button>                         
