@@ -31,8 +31,7 @@
 				<ul class="nav navbar-nav">
 					<li	class="active"><a href="index.html"> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Dashboard </a></li>
 					<li	class=""><a href="userGraph.jsp"> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Graphs</a></li>	
-					<li	class=""><a href="#"> <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Preparation</a></li>
-					<li	class=""><a href="#"> <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Execution</a></li>				
+					<li	class=""><a href="credits.jsp"> <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Credits</a></li>					
 				</ul>
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="dropdown">                                        

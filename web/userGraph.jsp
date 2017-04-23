@@ -14,15 +14,23 @@
          <%@include file="sigmasrc.jsp" %>
     </head>
     <body>
-        <h1>View Graphs</h1>
-   
+        <table align="center">
+            <tr align="center">
+                <td><h2>View Graph</h2></td>
+                
+            </tr> 
+            <tr></tr>
+            <tr align="center"><td><button type="button" class="btn btn-success">Save Graph</button></td></tr>
+        </table>
+             
+        
         <div id="container">
             <style>
               #graph-container {
-                top: 20%;
-                bottom: 10%;
-                left: 10%;
-                right: 10%;
+                top: 30%;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
                 position: absolute;
                 background: #9EB9D4
               }
@@ -55,7 +63,7 @@
               x: Math.random(),
               y: Math.random(),
               size: Math.random(),
-              color: '#666'
+              color: '#FF5733'
             });
 
           for (i = 0; i < E; i++)
@@ -64,7 +72,7 @@
               source: 'n' + (Math.random() * N | 0),
               target: 'n' + (Math.random() * N | 0),
               size: Math.random(),
-              color: '#ccc'
+              color: ' #00FF7F'
             });
 
           // Instantiate sigma:
@@ -75,6 +83,6 @@
        </script>
        
        
-       
+              
      </body>
 </html>
