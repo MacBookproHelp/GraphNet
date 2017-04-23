@@ -20,7 +20,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome</title>
-        <%@include file="userheader.jsp" %>
+        <%@include file="headers/userheader.jsp" %>
     </head>
     <body>
         <h1>Welcome to GraphNet Application</h1>               

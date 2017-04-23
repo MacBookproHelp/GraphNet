@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin Page</title>
-        <%@include file="adminheader.jsp" %>
+        <%@include file="headers/adminheader.jsp" %>
     </head>
     <body>
         <h1>Hello Admin!</h1>

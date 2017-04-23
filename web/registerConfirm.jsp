@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Register Confirmation</title>
-        <%@include file="userheader.jsp" %>
+        <%@include file="headers/userheader.jsp" %>
     </head>
     
     

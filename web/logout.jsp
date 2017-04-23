@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>LogOut</title>
-        <%@include file="header.jsp" %>
+        <%@include file="headers/header.jsp" %>
     </head>
     <body>
         <h1>See you soon again</h1>

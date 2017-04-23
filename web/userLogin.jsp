@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
         <title>Login to GraphNet</title>
-        <%@include file="header.jsp" %>
+        <%@include file="headers/header.jsp" %>
     </head>
     <body>
        <%
