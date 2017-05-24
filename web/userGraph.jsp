@@ -1,8 +1,4 @@
-<%-- 
-    Document   : userGraph
-    Created on : Apr 22, 2017, 1:09:24 PM
-    Author     : Keerthana
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

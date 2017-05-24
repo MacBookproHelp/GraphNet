@@ -51,7 +51,6 @@ public class login {
     
     public int verify() throws ClassNotFoundException, SQLException{
         int a=0;
-        Class.forName("org.apache.derby.jdbc.ClientDriver");
         
         String url = "jdbc:derby://localhost:1527/sample;user=app;password=app";
         String query = "SELECT * FROM UACUSER WHERE username=? AND password=?";

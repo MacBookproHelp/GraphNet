@@ -13,17 +13,10 @@
         <%@include file="headers/header.jsp" %>
     </head>
     <body>
-       <%
-        String userPrfl=(String)session.getAttribute("user");
-        
-        //redirect user to home page if already logged in
-        if(userPrfl!=null){
-            response.sendRedirect("welcome.jsp");
-        }
-        %>
+      
        <div class="container" align="center">
        
-        <form class="form-signin" action="welcome.jsp" method="POST">
+        <form class="form-signin" action="userLogin" method="POST">
             <h2 class="form-signin-heading">Please Login Here</h2>
             <label class="sr-only" for="inputEmail">Username</label>
             <input type="text" name="username" class="form-control" placeholder="Enter Username" />
