@@ -13,17 +13,27 @@ and open the template in the editor.
     </head>
     <body>
         <div align="center"><h1>Registration</h1></div>
-        <form name="register" action="registerConfirm.jsp" method="POST">
+        <form name="register" action="registerUser" method="POST">
             <table  align="center">
                 <tbody>
+                    
                     <tr>
-                        <td>Username</td>
-                        <td><input type="text" name="regusername"  /></td>
+                        <td>First Name</td>
+                        <td><input type="text" name="firstname"  /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="lastname"  /></td>
                     </tr>
                     <tr>
                         <td>Email</td>
                         <td><input type="text" name="regemail"  /></td>
                     </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="regusername"  /></td>
+                    </tr>
+                    
                     <tr>
                         <td>Password</td>
                         <td><input type="password" name="regpassword" /></td>

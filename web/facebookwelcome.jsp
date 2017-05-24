@@ -5,16 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="floginBean" scope="session" class="org.uac.login" />
-    <jsp:setProperty name="floginBean" property="username" />
-    <jsp:setProperty name="floginBean" property="useremail" />
     
-        <%
-          int a = floginBean.faceverify();
-          if(a==1){
-              session.setAttribute("user",floginBean.getUsername());
-              String userProf=(String)session.getAttribute("user");
-         %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,13 +14,12 @@
         <%@include file="headers/userheader.jsp" %>
     </head>
     <body>
+         <%              
+              String userProf=(String)session.getAttribute("user");    
+         %>     
         <h1>Welcome to GraphNet Application</h1>               
         
             <h2>Hello, Welcome <%=userProf%></h2>
-            <% }
-            else{ %>
-            <h2>Wrong Username or Password, Please try again </h2>
-            <%}            
-        %>                        
+                               
     </body>
 </html>

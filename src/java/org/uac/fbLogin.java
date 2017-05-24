@@ -6,7 +6,6 @@
 package org.uac;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,40 +15,44 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.uac.session.UacuserFacadeLocal;
 
+/**
+ *
+ * @author Teja
+ */
+@WebServlet(name = "fbLogin", urlPatterns = {"/fbLogin"})
+public class fbLogin extends HttpServlet {
 
-@WebServlet(name = "userLogin", urlPatterns = {"/userLogin"})
-public class userLogin extends HttpServlet {
-    
     @EJB
     private UacuserFacadeLocal uacuserBean;
-    String username, password, usertype; 
+    String username, email, usertype; 
     Boolean result;
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        username=request.getParameter("username");
-       password = request.getParameter("password");
+       email = request.getParameter("useremail");
        
-       result = uacuserBean.verifyLogin(username, password);
+       result = uacuserBean.verifyFb(username, email);
         if(result){
             HttpSession session=request.getSession();
             session.setAttribute("user", username);
-            usertype = uacuserBean.getuserType(username);
-            if(usertype.contains("admin")){
-                session.setAttribute("admin", "true");
-                response.sendRedirect("admin.jsp");
+            response.sendRedirect("welcome.jsp");
+        }else
+        {   
+            if(uacuserBean.registerUser(email, username, "user")){
+                 HttpSession session=request.getSession();
+                 session.setAttribute("user", username);
+                 response.sendRedirect("welcome.jsp");
             }else{
-               response.sendRedirect("welcome.jsp");
+                response.sendRedirect("welcome.jsp");
             }
-        }else{
-            response.sendRedirect("userLogin.jsp");
+           
         }
     }
     
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
-
 }

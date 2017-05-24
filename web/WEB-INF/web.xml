@@ -6,13 +6,13 @@
         </welcome-file-list>
         <servlet>
           <description></description>
-          <display-name>testClass</display-name>
-          <servlet-name>testClass</servlet-name>
-          <servlet-class>edu.uams.testservlet.testClass</servlet-class>
+          <display-name>fbLogin</display-name>
+          <servlet-name>fbLogin</servlet-name>
+          <servlet-class>org.uac.fbLogin</servlet-class>
         </servlet>
         <servlet-mapping>
-          <servlet-name>testClass</servlet-name>
-          <url-pattern>/testClass</url-pattern>
+          <servlet-name>fbLogin</servlet-name>
+          <url-pattern>/facebookwelcome.jsp</url-pattern>
         </servlet-mapping>
  
 </web-app>

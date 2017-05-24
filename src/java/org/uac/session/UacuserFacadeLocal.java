@@ -28,5 +28,11 @@ public interface UacuserFacadeLocal {
     int count();
 
     boolean verifyLogin(String u, String p);
+
+    String getuserType(String u);
+
+    Boolean verifyFb(String n, String m);
+
+    Boolean registerUser(String e, String n, String t);
     
 }
