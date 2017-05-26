@@ -15,10 +15,10 @@
 	<nav	class="navbar navbar-default"	role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="index.jsp">
 					<img class="img" src="resources/images/ua.png" alt="lion" style="width:105px;height:32px">
 				</a>
-				<a	class="navbar-brand" href="index.html">GraphNet Application</a>
+				<a	class="navbar-brand" href="index.jsp">GraphNet Application</a>
 				<button	type="button"	class="navbar-toggle collapsed"	data-toggle="collapse"	data-target="#autonavbar" aria-expanded="false"	aria-controls="navbar">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
@@ -29,7 +29,7 @@
 			</div>
 			<div id="autonavbar" class="navbar-collapse	collapse">
 				<ul class="nav navbar-nav">
-					<li	class="active"><a href="index.html"> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Dashboard </a></li>
+					<li	class="active"><a href="index.jsp"> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Dashboard </a></li>
 					<li	class=""><a href="#"> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Manage Graphs</a></li>	
 					<li	class=""><a href="#"> <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Manage Users</a></li>
 					<li	class=""><a href="#"> <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Others</a></li>				

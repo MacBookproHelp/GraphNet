@@ -6,16 +6,19 @@
 package org.uac.entityclass;
 
 import java.io.Serializable;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 
 @Entity
@@ -30,6 +33,10 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Uacuser.findByUsertype", query = "SELECT u FROM Uacuser u WHERE u.usertype = :usertype")
     , @NamedQuery(name = "Uacuser.findByEmail", query = "SELECT u FROM Uacuser u WHERE u.email = :email")})
 public class Uacuser implements Serializable {
+
+    
+
+    @OneToMany(mappedBy = "username")
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -142,4 +149,5 @@ public class Uacuser implements Serializable {
         return "org.uac.entityclass.Uacuser[ username=" + username + " ]";
     }
     
+
 }
