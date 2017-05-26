@@ -24,7 +24,7 @@
                     if(session.getAttribute("delete")=="Success"){
                     %>
                         <div class="alert alert-success" role="alert">Graph Deleted Successfully</div>
-                    <%}
+                        <%session.removeAttribute("delete");}
                 %>
     </body>
 </html>

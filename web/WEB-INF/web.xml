@@ -5,6 +5,10 @@
         <servlet-name>deleteGraph</servlet-name>
         <servlet-class>org.uac.deleteGraph</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>updateGraph</servlet-name>
+        <servlet-class>org.uac.updateGraph</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>createGraph</servlet-name>
         <url-pattern>/createGraph</url-pattern>
@@ -12,6 +16,10 @@
     <servlet-mapping>
         <servlet-name>deleteGraph</servlet-name>
         <url-pattern>/deleteGraph</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateGraph</servlet-name>
+        <url-pattern>/updateGraph</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
