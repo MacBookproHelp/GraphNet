@@ -36,6 +36,7 @@
                                                 <li><a href="creategraph.jsp">Create Graph</a></li>
                                                 <li><a href="editgraph.jsp">Edit Graph</a></li>
                                                 <li><a href="deletegraph.jsp">Delete Graph</a></li>
+                                                <li><a href="download.jsp">Download Graph</a></li>
                                             </ul>                                         
                                             
                                         </li>	
