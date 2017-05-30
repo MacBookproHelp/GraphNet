@@ -55,13 +55,23 @@ public class GraphFacade extends AbstractFacade<Graph> implements GraphFacadeLoc
     }
 
     @Override
-    public List<Graph> getUsergraphs(String gu) {
-        Query q = em.createNamedQuery("select g from graph g where g.usrname=:gu");
-        q.setParameter("gu", gu);
-        return q.getResultList();
+    public List<Graph> getUsergraphs(String gu, String gn) {
+        Query q = em.createNativeQuery("select * from graph where usrname=? and graphname=?");
+        q.setParameter(1, gu);
+        q.setParameter(2, gn);
+        List<Graph> grphs = q.getResultList();
+        return grphs;
+    }
+
+    @Override
+    public String getGraph(String u, String gn) {
+        Query q = em.createNamedQuery("select g from graph g where g.usrname=:u and g.graphname=:gn");
+        q.setParameter("u", u);
+        q.setParameter("gn", gn);
+        return q.getResultList().toString();
     }
     
-    
+     
     
     
 }

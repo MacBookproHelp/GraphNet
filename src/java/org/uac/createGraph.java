@@ -69,7 +69,7 @@ public class createGraph extends HttpServlet {
         String edgesize = Integer.toString(edgeArry.size()-3);
         String gsize = Integer.toString(nodeArry.size()-3 + edgeArry.size()-3);
         System.out.println("the sizes are  "+nodesize +"; "+edgesize+";"+gsize);   
-        
+        try{
         if(hm.get("weighted").toString().contains("true")){            
            session.setAttribute("weighted", "true");            
            response.sendRedirect("creategraph.jsp");
@@ -88,14 +88,19 @@ public class createGraph extends HttpServlet {
               NodeFacade.create(nodebean);
               i++;
            }
-        }
+        }}catch(Exception e){ 
+              System.out.println("Exception in saving grpah is "+e.toString());
+              response.sendRedirect("creategraph.jsp"); 
+         }
             result = GraphBean.addGraph(hm.get("name").toString(), hm.get("description").toString(), nodesize, edgesize, gsize, hm.get("weighted").toString(), user);
             //result = true; 
             if(result=true){
                 session.setAttribute("save", "Success");
                 response.sendRedirect("creategraph.jsp");
+            }else{
+               response.sendRedirect("creategraph.jsp"); 
             }
-            
+           
             
        
         }

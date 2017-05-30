@@ -30,10 +30,11 @@
 			<div id="autonavbar" class="navbar-collapse	collapse">
 				<ul class="nav navbar-nav">
 					<li	class=""><a href="index.jsp"> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Dashboard </a></li>
-					<li	class="active"><a href="userGraph.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Graphs <span class="caret"></span></a>
+					<li	class="active"><a href="viewGraph.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Graphs <span class="caret"></span></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="userGraph.jsp">View Graph</a></li>
-                                                <li><a href="creategraph.jsp">Create Graph</a></li>
+                                                <li><a href="viewGraph.jsp">View Graph</a></li>
+                                                <li><a href="userGraph.jsp">Draw Graph</a></li>
+                                                <li><a href="creategraph.jsp">Import Graph</a></li>
                                                 <li><a href="editgraph.jsp">Edit Graph</a></li>
                                                 <li><a href="deletegraph.jsp">Delete Graph</a></li>
                                                 <li><a href="download.jsp">Download Graph</a></li>

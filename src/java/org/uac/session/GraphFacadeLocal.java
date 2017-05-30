@@ -29,6 +29,8 @@ public interface GraphFacadeLocal {
 
     Boolean addGraph(String gn, String gd, String gw, String gu, String gs, String go, String ge);
 
-    List getUsergraphs(String gu);
+    List<Graph> getUsergraphs(String gu, String gn);
+
+    String getGraph(String u, String gn);
     
 }

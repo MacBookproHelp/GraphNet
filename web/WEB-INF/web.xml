@@ -13,6 +13,10 @@
         <servlet-name>saveGraph</servlet-name>
         <servlet-class>org.uac.saveGraph</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>viewGraph</servlet-name>
+        <servlet-class>org.uac.viewGraph</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>createGraph</servlet-name>
         <url-pattern>/createGraph</url-pattern>
@@ -28,6 +32,10 @@
     <servlet-mapping>
         <servlet-name>saveGraph</servlet-name>
         <url-pattern>/saveGraph</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewGraph</servlet-name>
+        <url-pattern>/viewGraph</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
